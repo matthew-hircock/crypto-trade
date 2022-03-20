@@ -1,16 +1,12 @@
 const ctx = document.getElementById('priceHistory').getContext('2d');
-const baseApiUrl = 'http://localhost:8080/coins/';
+const baseApiUrl = 'http://localhost:8080/coins/'; // change to correct host computer
 
 const chartData = {
 	datasets: [{
 		label: 'Price',
 		data: [],
-		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-		],
-		borderColor: [
-			'rgba(255, 99, 132, 1)',
-		],
+		backgroundColor: 'rgba(255, 99, 132, 0.2)',
+		borderColor: 'rgba(255, 99, 132, 1)',
 		borderWidth: 1,
 		showLine: true,
 		pointRadius: 0

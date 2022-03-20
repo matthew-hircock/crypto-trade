@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coins</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,7 +12,6 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"></script>
-
 </head>
 <body>
 
@@ -59,9 +58,6 @@
 					<a class="btn btn-primary"
 						th:classappend="${coins.size eq 50} ? 'disabled' : ''"
 						th:href="@{/coins(pageSize=50,pageNumber=${coins.number})}">50</a>
-					<a class="btn btn-primary"
-						th:classappend="${coins.size eq 100} ? 'disabled' : ''"
-						th:href="@{/coins(pageSize=100,pageNumber=${coins.number})}">100</a>
 				</div>
 				<nav style="float: right;">
 					<ul class="pagination justify-content-center">
